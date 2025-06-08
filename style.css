@@ -1,5 +1,3 @@
-/* style.css - Estilos principales para RegistroUnico.es */
-
 /* Reset básico */
 * {
   margin: 0;
@@ -8,171 +6,186 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9fb;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #111827;
   line-height: 1.6;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+/* Sección Hero */
+.hero {
+  background-color: #6C2BD9;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-/* HERO */
-.hero {
-  background: #5c27c0;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
+
 .hero span {
-  color: #ff9000;
+  color: #F97316;
 }
+
 .hero p {
-  margin-bottom: 20px;
   font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero button {
-  background: white;
-  color: #5c27c0;
-  border: none;
-  padding: 12px 24px;
+  background-color: #fff;
+  color: #6C2BD9;
   font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-.hero button:hover {
-  background: #eee;
-}
-
-/* SECTIONS */
-section {
-  padding: 60px 20px;
-}
-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-section p.section-desc {
-  text-align: center;
-  color: #666;
-  margin-bottom: 40px;
-}
-
-/* FEATURES */
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.feature-box {
-  background: white;
-  padding: 20px;
+  padding: 0.75rem 1.5rem;
+  border: none;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  width: 300px;
-  text-align: center;
-}
-.feature-box .icon {
-  font-size: 2rem;
-  color: #5c27c0;
-  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* PRICING */
-.pricing {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.hero button:hover {
+  background-color: #f3f4f6;
 }
+
+/* Secciones */
+.section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section p.description {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+/* Tarjetas */
+.card-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .card {
-  background: white;
-  padding: 30px;
+  background: #fff;
   border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
-.card.primary {
-  background: #5c27c0;
-  color: white;
-}
-.card.secondary {
-  border: 2px solid #5c27c0;
-  color: #5c27c0;
-  background: #fff;
-}
-.card h3 {
-  margin-bottom: 10px;
-}
-.card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 15px;
-}
-.card ul li::before {
-  content: "\2714";
-  margin-right: 10px;
-  color: #00c851;
+
+.card .icon {
+  font-size: 2rem;
+  color: #6C2BD9;
+  margin-bottom: 0.75rem;
 }
 
-/* TESTIMONIOS */
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Precios */
+.price-box {
+  border: 2px solid #6C2BD9;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.price-box.purple {
+  background-color: #6C2BD9;
+  color: #fff;
+  border: none;
+}
+
+.price-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.price-box .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.price-box ul {
+  list-style: none;
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.price-box ul li {
+  margin-bottom: 0.5rem;
+}
+
+.price-box ul li::before {
+  content: '✔ ';
+  color: #10B981;
+}
+
+/* Testimonios */
 .testimonials {
   display: grid;
+  gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
 }
+
 .testimonial {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-.testimonial p {
-  margin-bottom: 8px;
+
+.testimonial .stars {
+  color: #facc15;
+  font-size: 1.2rem;
 }
-.testimonial .name {
+
+.testimonial .quote {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.testimonial .author {
   font-weight: bold;
 }
-.testimonial .location {
-  color: #777;
-  font-size: 0.9rem;
+
+.testimonial .role {
+  font-size: 0.875rem;
+  color: #6b7280;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
-  background: #f1f1f1;
-  padding: 30px 10px;
-  font-size: 0.9rem;
+  background-color: #f3f4f6;
+  padding: 2rem 1rem;
   text-align: center;
-  color: #666;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
+
 footer a {
-  color: #5c27c0;
-  margin: 0 8px;
+  color: #6C2BD9;
   text-decoration: none;
+  margin: 0 0.5rem;
 }
+
 footer a:hover {
   text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  .card {
-    width: 100%;
-  }
 }
