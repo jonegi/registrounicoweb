@@ -1,120 +1,100 @@
-// Nueva versión visual mejorada de la homepage de RegistroUnico.es
-// Basado en el diseño original en Horizons
-
-export default function Home() {
-  return (
-    <div className="bg-white text-gray-900">
-      {/* Hero Section */}
-      <section className="bg-purple-700 text-white py-20 text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="text-5xl font-bold mb-4">
-            Registro Único de <span className="text-yellow-400">Alquiler Turístico</span>
-          </div>
-          <p className="text-lg mb-6">
-            Simplificamos la burocracia. Gestionamos tu registro oficial de forma rápida, segura y profesional.
-            ¡Nosotros nos encargamos de todo!
-          </p>
-          <button className="bg-white text-purple-700 px-6 py-3 font-semibold rounded shadow-md hover:bg-gray-200">
-            Comenzar Registro Ahora
-          </button>
-        </div>
-      </section>
-
-      {/* Beneficios */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4"> ¿Por qué elegirnos?</h2>
-          <p className="text-center text-gray-600 mb-10">Somos especialistas en la gestión de registros turísticos. Servicio completo y sin complicaciones.</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded shadow">
-              <div className="text-purple-700 text-4xl mb-2">🔒</div>
-              <h3 className="font-semibold text-lg mb-2">100% Legal y Seguro</h3>
-              <p>Cumplimos todas las normativas vigentes y garantizamos la protección de tus datos.</p>
-            </div>
-            <div className="bg-white p-6 rounded shadow">
-              <div className="text-purple-700 text-4xl mb-2">📄</div>
-              <h3 className="font-semibold text-lg mb-2">Gestión Integral</h3>
-              <p>Nos encargamos de toda la documentación, incluyendo la Nota Simple si la necesitas.</p>
-            </div>
-            <div className="bg-white p-6 rounded shadow">
-              <div className="text-purple-700 text-4xl mb-2">💬</div>
-              <h3 className="font-semibold text-lg mb-2">Soporte Experto</h3>
-              <p>Especialistas disponibles para ayudarte y resolver todas tus dudas durante el proceso.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Precios */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Precios Claros y Transparentes</h2>
-          <p className="text-gray-600 mb-10">Sin sorpresas ni costes ocultos. Todo incluido.</p>
-          <div className="flex flex-col md:flex-row justify-center gap-8">
-            <div className="bg-purple-700 text-white p-6 rounded-xl shadow w-full md:w-1/2">
-              <h3 className="text-xl font-bold mb-2">Registro Inicial</h3>
-              <p className="text-3xl font-extrabold mb-2">100€ + IVA</p>
-              <p className="text-sm mb-4">(+25€ + IVA si no aportas CRU/IDUFIR)</p>
-              <ul className="text-left space-y-2 text-sm">
-                <li>✔ Gestión completa del registro</li>
-                <li>✔ Preparación de documentación</li>
-                <li>✔ Envío de certificado oficial</li>
-                <li>✔ Soporte experto durante el proceso</li>
-              </ul>
-            </div>
-            <div className="bg-white text-purple-700 border-2 border-purple-700 p-6 rounded-xl shadow w-full md:w-1/2">
-              <h3 className="text-xl font-bold mb-2">Mantenimiento Anual</h3>
-              <p className="text-3xl font-extrabold mb-2">50€ + IVA</p>
-              <p className="text-sm mb-4">(incluido el primer año con el pago inicial)</p>
-              <ul className="text-left space-y-2 text-sm">
-                <li>✔ Renovación anual</li>
-                <li>✔ Actualización de documentación</li>
-                <li>✔ Recordatorio de vencimientos</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonios */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Lo que dicen nuestros clientes</h2>
-          <p className="text-gray-600 mb-10">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded shadow text-left">
-              <p className="mb-2">⭐⭐⭐⭐⭐</p>
-              <p className="italic mb-4">"Muy fácil, lo hicieron todo por mí."</p>
-              <p className="font-semibold">Marta González</p>
-              <p className="text-sm text-gray-600">Propietaria en Getxo</p>
-            </div>
-            <div className="bg-white p-6 rounded shadow text-left">
-              <p className="mb-2">⭐⭐⭐⭐⭐</p>
-              <p className="italic mb-4">"Servicio rápido y sin complicaciones. 100% recomendable."</p>
-              <p className="font-semibold">Iñigo</p>
-              <p className="text-sm text-gray-600">Bilbao</p>
-            </div>
-            <div className="bg-white p-6 rounded shadow text-left">
-              <p className="mb-2">⭐⭐⭐⭐⭐</p>
-              <p className="italic mb-4">"Muy profesionales y atentos. Me ahorraron mucho tiempo."</p>
-              <p className="font-semibold">Carlos Ruiz</p>
-              <p className="text-sm text-gray-600">Gestor de apartamentos en San Sebastián</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-100 text-center py-8 text-sm text-gray-500">
-        <p>&copy; 2025 RegistroUnico.es - Reservero S.L. (B05400866) - Calle Victor Chavarri 4LOCAL, 48920 Portugalete (Bizkaia)</p>
-        <p>Email: info@registrounico.es</p>
-        <div className="mt-2">
-          <a href="#" className="mx-2 hover:underline">Contacto</a>
-          <a href="#" className="mx-2 hover:underline">Aviso Legal</a>
-          <a href="#" className="mx-2 hover:underline">Política de privacidad</a>
-          <a href="#" className="mx-2 hover:underline">Cookies</a>
-        </div>
-      </footer>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro Único de Viviendas Turísticas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1><span>Registro Único de</span><br><span class="highlight">Alquiler Turístico</span></h1>
+      <p>Simplifica la burocracia. Gestionamos tu registro oficial de forma rápida, segura y profesional. ¡Nosotros nos encargamos de todo!</p>
+      <a href="#" class="btn">Comenzar Registro Ahora</a>
     </div>
-  );
-}
+  </header>
+
+  <section class="features">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>Somos especialistas en la gestión de registros turísticos. Servicio completo y sin complicaciones.</p>
+    <div class="card-group">
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>100% Legal y Seguro</h3>
+        <p>Cumplimos todas las normativas vigentes y garantizamos la protección de tus datos.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>Gestión Integral</h3>
+        <p>Nos encargamos de toda la documentación, incluida la Nota Simple si la necesitas.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>Soporte Experto</h3>
+        <p>Especialistas disponibles para ayudarte durante todo el proceso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Precios Claros y Transparentes</h2>
+    <p>Sin sorpresas ni costes ocultos. Todo incluido.</p>
+    <div class="card-group">
+      <div class="card highlight">
+        <h3>Registro Inicial</h3>
+        <p class="price">100€ + IVA</p>
+        <p class="note">(+25€ + IVA si no aportas CRU/IDUFIR)</p>
+        <ul>
+          <li>✓ Gestión completa del registro</li>
+          <li>✓ Preparación de documentación</li>
+          <li>✓ Envío de certificado oficial</li>
+          <li>✓ Soporte experto durante el proceso</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Mantenimiento Anual</h3>
+        <p class="price">50€ + IVA</p>
+        <p class="note">(incluido el primer año con el pago inicial)</p>
+        <ul>
+          <li>✓ Renovación anual</li>
+          <li>✓ Actualización de documentación</li>
+          <li>✓ Recordatorio de vencimientos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="card-group">
+      <div class="card">
+        <p class="stars">★★★★★</p>
+        <p class="quote">"Muy fácil, lo hicieron todo por mí."</p>
+        <p class="author">Marta González<br><span>Propietaria en Getxo</span></p>
+      </div>
+      <div class="card">
+        <p class="stars">★★★★★</p>
+        <p class="quote">"Servicio rápido y sin complicaciones. 100% recomendable."</p>
+        <p class="author">Iñigo<br><span>Bilbao</span></p>
+      </div>
+      <div class="card">
+        <p class="stars">★★★★★</p>
+        <p class="quote">"Muy profesionales y atentos. Me ahorraron mucho tiempo."</p>
+        <p class="author">Carlos Ruiz<br><span>Gestor en San Sebastián</span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RegistroUnico.es - Reservero S.L. (B05400866) - Calle Victor Chavarri 4LOCAL, 48920 Portugalete (Bizkaia)</p>
+    <p>info@registrounico.es</p>
+    <div class="footer-links">
+      <a href="#">Contacto</a>
+      <a href="#">Aviso Legal</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Cookies</a>
+    </div>
+  </footer>
+</body>
+</html>
